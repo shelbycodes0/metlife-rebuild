@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" type="text/css" />
+     <style>
+      @media (max-width: 1000px) {
+      
+        .widescreen {
+          display: none;
+        }
+      }
+      @media (min-width: 1001px) {
+        .mobilescreen {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary widescreen">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            src="/src/metlifelogo.png"
+            alt="metlife logo"
+            width="140"
+            height="28"
+            class="d-inline-block align-text-top"
+          />
+          | Williams-Sonoma Inc.
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#"
+              >Dashboard</a
+            >
+            <a class="nav-link" href="#">Accounts</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mobilescreen">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/src/metlifelogo.png"
+            alt=""
+            width="140"
+            height="28"
+            class="d-inline-block align-text-top"
+          />
+          | WSI
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#"
+              >Dashboard</a
+            >
+            <a class="nav-link" href="#">Accounts</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="card">
+      <h5 class="card-header text-center topHeader"><br /><img
+            src="/src/metlifelogo.png"
+            alt=""
+            width="230"
+            height="50"
+            class="d-inline-block align-text-top"
+          /> | MyBenefits<br /></h5>
+      <div class="card-body">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#active"
+              type="button"
+              role="tab"
+              aria-controls="active"
+              aria-selected="true"
+            >
+              Active Claims
+            </button>
+
+            
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="file-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#file"
+              type="button"
+              role="tab"
+              aria-controls="file"
+              aria-selected="false"
+            >
+              File a New Claim
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="payments-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#payments"
+              type="button"
+              role="tab"
+              aria-controls="payments"
+              aria-selected="false"
+            >
+              Payments
+            </button>
+          </li>
+           <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="documents-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#documents"
+              type="button"
+              role="tab"
+              aria-controls="documents"
+              aria-selected="false"
+            >
+              Documents
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+ <!-- ************************************** ACTIVE CLAIMS ************************************* -->
+          <div
+            class="tab-pane fade show active"
+            id="active"
+            role="tabpanel"
+            aria-labelledby="active-tab"
+          >
+            <div class="container-fluid">
+              <h5 class="card-title topDash"><br />Welcome, Shelby Courtney!</h5>
+              <p class="card-text">
+                This is the Active Claims Dashboard. Any Active Claims will
+                appear here. <br />Don't see your claim? You can try searching
+                by claim number, or file a new claim.
+              </p>
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/src/employee.png"
+                      class="card-img-top dashboardPics"
+                      alt="claim"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <span class="topDash"> Short-Term Disability</span
+                        ><br /><br />Claim: #4686122566175
+                      </h5>
+                      <p class="card-text">
+
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button completedTask" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Claim Received by Metlife
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+        <ul><li><strong>Date Claim Received:</strong> 3/21/2022</li>
+        <li><strong>Disability Start Date:</strong> 3/11/2022</li>
+    <li><strong>Last Day Worked:</strong> 3/10/2022</li>
+<li><strong>Benefit Start Date:</strong> 3/18/2022</li>
+<li><strong>Benefit Approved Through Date:</strong> 6/31/2022</li></ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed completedTask" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Case Manager Assigned
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+        <ul><li><strong>Case Manager:</strong> Kathleen Loewer</li>
+        <li><strong>Case Manager Phone:</strong> 877-638-6389</li>
+    <li><strong>Case Manager Email:</strong> kloewer@metlife.com</li></ul>
+    <button type="button" class="btn btn-primary">Message Case Manager</button>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed completedTask" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Payment Details Added
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+        <ul><li><strong>Payment Method:</strong> Direct Deposit</li>
+        <li><strong>Payment Account:</strong> Checking 123456789102</li></ul>
+        <button type="button" class="btn btn-primary">Update Payment Method</button>
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-success text-end" role="alert">
+  <strong>Case Status:</strong> Approved
+</div>
+</div>
+
+                       <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search by Claim Number" aria-label="Search by Claim Number">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+                      </p>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/src/faq.png" class="card-img-top dashboardPics" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title topDash">Frequently Asked Questions</h5>
+                      <p class="card-text">
+                        <ul><li><strong>Why does my Case Status show as <em>Pending?</em> :</strong> <br>A Pending Case Status indicates that Metlife is still waiting
+                        on documentation for your case. To speed up the process, please make sure you have filled out the HIPPA release form and provided any necessary document uploads (such as medical notes, doctor statements and assessments, ect.) <br></li>
+        <li><strong>Where can I access the documents that explain my coverages? :</strong> <br>Policy and coverage documents can be found by clicking the "Accounts" link in the top navigation bar. Or you can click <a href="#" class="dashboardLinks">here.</a></li>
+    <li><strong>Where do I go to upload and view case documents? :</strong> <br>Documents can be added or viewed by clicking the "Documents" tab at the top of the Dashboard.</li>
+<li><strong>How is disability paid out? :</strong> <br>Details of coverages can be found in the Accounts "link" in the top navigation bar. Depending on your coverage, payments are made based on qualifications. Typically payment is made on a weekly basis, but this could vary by policy. Check your specific accounts for more information. </li>
+<li><strong>How can I check if I've been paid?</strong> <br>Payment details, including amounts and dates of transactions, can be found by clicking the "Payments" tab in the top of the Dashboard.</li></ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+<!-- ************************************** New Claims Tab ************************************* -->
+          <div
+            class="tab-pane fade"
+            id="file"
+            role="tabpanel"
+            aria-labelledby="file-tab"
+          >
+            <div class="container-fluid">
+              <h5 class="card-title topDash"><br />File a New Claim</h5>
+              <p class="card-text">
+                Metlife is sorry you're not feeling your best.<br>
+                Easily file a new claim here. <br>Alternatively, you can file a claim by calling us at 877-432-9987.
+              </p>
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/src/new.png"
+                      class="card-img-top dashboardPics"
+                      alt="claim"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <span class="topDash">File a New Claim</span
+                        >
+                      </h5>
+                      <p class="card-text">
+<form>
+ 
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Which type of claim would you like to file?</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>Short-Term Disability</option>
+      <option>Long-Term Disability</option>
+      <option>Critical Illness Insurance</option>
+      <option>Hospital Indemnity Insurance</option>
+      <option>Group Accident Insurance</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Associate ID Number or Social Security Number:</label>
+    <input type="text" class="form-control" placeholder="XXX-XX-XXXX" rows="1"></textarea><br>
+  </div>
+  <button type="submit" class="btn btn-primary">Start Claim</button>
+</form>
+
+
+                       
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/src/faq.png" class="card-img-top dashboardPics" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title topDash">Frequently Asked Questions</h5>
+                      <p class="card-text">
+                        <ul><li><strong>Why does my Case Status show as <em>Pending?</em> :</strong> <br>A Pending Case Status indicates that Metlife is still waiting
+                        on documentation for your case. To speed up the process, please make sure you have filled out the HIPPA release form and provided any necessary document uploads (such as medical notes, doctor statements and assessments, ect.) <br></li>
+        <li><strong>Where can I access the documents that explain my coverages? :</strong> <br>Policy and coverage documents can be found by clicking the "Accounts" link in the top navigation bar. Or you can click <a href="#" class="dashboardLinks">here.</a></li>
+    <li><strong>Where do I go to upload and view case documents? :</strong> <br>Documents can be added or viewed by clicking the "Documents" tab at the top of the Dashboard.</li>
+<li><strong>How is disability paid out? :</strong> <br>Details of coverages can be found in the Accounts "link" in the top navigation bar. Depending on your coverage, payments are made based on qualifications. Typically payment is made on a weekly basis, but this could vary by policy. Check your specific accounts for more information. </li>
+<li><strong>How can I check if I've been paid?</strong> <br>Payment details, including amounts and dates of transactions, can be found by clicking the "Payments" tab in the top of the Dashboard.</li></ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          </div>
+          </div>
+<!-- ************************************** Payments Tab ************************************* -->
+          <div
+            class="tab-pane fade"
+            id="payments"
+            role="tabpanel"
+            aria-labelledby="payments-tab"
+          >
+            <div class="container-fluid">
+              <h5 class="card-title topDash"><br />Payment Status</h5>
+              <p class="card-text">
+                Disability payments made by Metlife can be found here.
+              </p>
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/src/money.png"
+                      class="card-img-top dashboardPics"
+                      alt="claim"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <span class="topDash">Payment Status</span
+                        >
+                      </h5>
+                      <p class="card-text">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Date</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>4/18/2022</td>
+      <td>$850.64</td>
+      <td>Direct Deposit x9102</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>5/20/2022</td>
+      <td>$850.64</td>
+      <td>Direct Deposit x9102</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>6/7/2022</td>
+      <td>$850.64</td>
+      <td>Direct Deposit x9102</td>
+    </tr>
+  </tbody>
+</table>
+<button type="submit" class="btn btn-primary">Update Payment Method</button>
+
+
+                       
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/src/faq.png" class="card-img-top dashboardPics" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title topDash">Frequently Asked Questions</h5>
+                      <p class="card-text">
+                        <ul><li><strong>Why does my Case Status show as <em>Pending?</em> :</strong> <br>A Pending Case Status indicates that Metlife is still waiting
+                        on documentation for your case. To speed up the process, please make sure you have filled out the HIPPA release form and provided any necessary document uploads (such as medical notes, doctor statements and assessments, ect.) <br></li>
+        <li><strong>Where can I access the documents that explain my coverages? :</strong> <br>Policy and coverage documents can be found by clicking the "Accounts" link in the top navigation bar. Or you can click <a href="#" class="dashboardLinks">here.</a></li>
+    <li><strong>Where do I go to upload and view case documents? :</strong> <br>Documents can be added or viewed by clicking the "Documents" tab at the top of the Dashboard.</li>
+<li><strong>How is disability paid out? :</strong> <br>Details of coverages can be found in the Accounts "link" in the top navigation bar. Depending on your coverage, payments are made based on qualifications. Typically payment is made on a weekly basis, but this could vary by policy. Check your specific accounts for more information. </li>
+<li><strong>How can I check if I've been paid?</strong> <br>Payment details, including amounts and dates of transactions, can be found by clicking the "Payments" tab in the top of the Dashboard.</li></ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          </div>
+        </div>
+
+<!-- ************************************** Documents Tab ************************************* -->
+         <div
+            class="tab-pane fade"
+            id="documents"
+            role="tabpanel"
+            aria-labelledby="documents-tab"
+          >
+            <div class="container-fluid">
+              <h5 class="card-title topDash"><br />Case Documents</h5>
+              <p class="card-text">
+                Upload and view your Case Documents here. <br>Case Documents refers to HIPPA Release Forms, Physician Statements, Medical Notes, and anything else needed to process your case.
+              </p>
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/src/claim.png"
+                      class="card-img-top dashboardPics"
+                      alt="claim"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <span class="topDash">Documents Uploaded</span
+                        >
+                      </h5>
+                      <p class="card-text">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Date</th>
+      <th scope="col">Title</th>
+      <th scope="col">View</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>4/18/2022</td>
+      <td>HIPPA Release</td>
+      <td><a href="#" download>
+  HIPPARelease.docx
+</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>5/20/2022</td>
+      <td>Medical Notes</td>
+      <td><a href="#" download>
+  DoctorNotesMay2022.docx
+</a></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>6/7/2022</td>
+      <td>Pyhsician Statement</td>
+      <td><a href="#" download>
+  PhysicianStatementMay2022.docx
+</a></td>
+    </tr>
+  </tbody>
+</table>
+<button type="submit" class="btn btn-danger">Upload New Document</button>
+
+
+                       
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="/src/faq.png" class="card-img-top dashboardPics" alt="..." />
+                    <div class="card-body">
+                      <h5 class="card-title topDash">Frequently Asked Questions</h5>
+                      <p class="card-text">
+                        <ul><li><strong>Why does my Case Status show as <em>Pending?</em> :</strong> <br>A Pending Case Status indicates that Metlife is still waiting
+                        on documentation for your case. To speed up the process, please make sure you have filled out the HIPPA release form and provided any necessary document uploads (such as medical notes, doctor statements and assessments, ect.) <br></li>
+        <li><strong>Where can I access the documents that explain my coverages? :</strong> <br>Policy and coverage documents can be found by clicking the "Accounts" link in the top navigation bar. Or you can click <a href="#" class="dashboardLinks">here.</a></li>
+    <li><strong>Where do I go to upload and view case documents? :</strong> <br>Documents can be added or viewed by clicking the "Documents" tab at the top of the Dashboard.</li>
+<li><strong>How is disability paid out? :</strong> <br>Details of coverages can be found in the Accounts "link" in the top navigation bar. Depending on your coverage, payments are made based on qualifications. Typically payment is made on a weekly basis, but this could vary by policy. Check your specific accounts for more information. </li>
+<li><strong>How can I check if I've been paid?</strong> <br>Payment details, including amounts and dates of transactions, can be found by clicking the "Payments" tab in the top of the Dashboard. </li></ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+      
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- **************************************footer************************************* -->
+    <br><br>
+
+    <footer><div class="widescreen"><a class="footerLinks" href="">Privacy Policy</a><a class="footerLinks" href="">Terms of Use</a><a class="footerLinks" href="">Contact Us</a></div>
+      <div class="mobilescreen"><a class="footerLinksSmall" href="">Privacy</a><a class="footerLinksSmall" href="">Terms</a><a class="footerLinksSmall" href="">Contact</a></div></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

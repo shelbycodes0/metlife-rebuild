@@ -1,0 +1,60 @@
+.loginCard {
+  right: 10%;
+}
+.loginText {
+  padding: 70px;
+  border: 1px solid black;
+  background-color: #f8f9fa;
+  margin-left: 800px;
+}
+.searchBtn {
+  border: 1px solid black !important;
+  color: white;
+}
+.mobileCard {
+  margin: 0 !important;
+  width: 100% !important;
+  background-color: #0d6efd;
+}
+.cardPics {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+footer {
+  text-align: center;
+}
+.footerLinks {
+  text-decoration: none;
+  padding: 30px;
+}
+.footerLinksSmall {
+  text-decoration: none;
+  padding: 20px;
+}
+hr {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+.dashboardPics {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.topDash {
+  font-size: 30px;
+}
+.topHeader {
+  font-weight: bold;
+  font-size: 40px;
+}
+.completedTask {
+  background-color: #d1e7dd;
+}
+.dashboardLinks {
+  text-decoration: none;
+}
